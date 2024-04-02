@@ -34,7 +34,6 @@ function addPost() {
   USERID.date = new Date().toLocaleString();
   let published = 
   `<div id="parents">
-      <img src="${USERID.image}">
       <div id="comment1">
           <h1>${USERID.name}</h1>
           <p>${USERID.message}</p>
@@ -66,10 +65,3 @@ function deleteDiv1() {
 }
 
 publishBtn.addEventListener("click", addPost);
-
-if (container) {
-  container.innerHTML += published;
-  // Other actions
-} else {
-  console.error('Container element not found');
-}
